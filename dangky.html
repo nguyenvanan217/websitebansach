@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <link rel="shortcut icon" href="images/logo1.webp" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICEGROUP-STORE</title>
+</head>
+<body>
+    <header>
+        <div class="logo-head">
+            <img src="images/logo1.webp" alt="" width="150px" height="120px">
+        </div>
+        <div class="support">
+            <div class="support-top">
+                <ul>
+                    <li><i class="bi bi-telephone-fill"> </i><a href="tel:+84123456789">Gọi Ngay</a></li>
+                    <li><a href="dangky.html">Đăng Ký</a></li>
+                    <li><a href="dangnhap.html">Đăng Nhập</a></li>
+                </ul>
+                <div class="support-bottom">
+                    <p>Email chăm sóc khách hàng: <a  href="">info@iecgroup.vn</a></p>
+                </div>
+            </div>
+            <div class="shooping-cart">
+                <li><i class="bi bi-bag"></i></li>
+                <div class="cart_child">
+                    <strong>Thông Tin Sản Phẩm:</strong>
+                    <table class="cart-table" id="cartTable">
+                        <thead>
+                            <tr>
+                                <th>Ảnh Sản Phẩm</th>
+                                <th>Số Lượng</th>
+                                <th style="margin-left: 25px; display: block;">Xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="cart-item" id="defaultCartItem">
+                                <td class="anh-sp">
+                                    <img src="images/sp1.jpg" alt="">
+                                </td>
+                                <td class="sl">
+                                    <input style="height: 40px; width: 100px;" type="number" id="quantity" value="1" min="1">
+                                </td>
+                                <td class="remove">
+                                    <li><i class="bi bi-trash-fill"></i></li>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- menu -->
+        <div class="menu-tong">
+            <ul class="menu">
+                <li><a href="trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="">SẢN PHẨM <i class="bi bi-caret-down-fill"></i></a>
+                    <ul>
+                        <li><a href="sanphamsachin.html">Sách In</a></li>
+                        <li><a href="sanphamphanmem.html">Phần Mềm Học Tiếng Anh</a></li>
+                        <li><a href="sanphamAssessment.html">Assessment</a></li>
+                    </ul>
+                </li>
+                <li><a href="">BLOGS <i class="bi bi-caret-down-fill"></i></a>
+                    <ul>
+                        <li><a href="blogthongtinsk.html">Thông Tin Sự Kiện</a></li>
+                        <li><a href="blogthongtinsp.html">Thông Tin Sản Phẩm</a></li>
+                        <li><a href="blogtainguyendayhoc.html">Tài Nguyên Dạy Và Học</a></li>
+                        <li><a href="blogthongtinDEVELOPMENT.html">Thông Tin Profesional Development</a></li>
+                    </ul>
+                </li>
+                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+            <ul class="menu-search">
+                <div class="search-container">
+                    <input type="text" class="search-box" placeholder="Tìm Kiếm...">
+                    <i class="bi bi-search search-icon"></i>
+                </div>
+            </ul>
+        </div>
+        <div class="title-top">
+            <ul>
+                <li><a href="trangchu.html">TRANG CHỦ /</a></li>
+                <li><a href="danhmuc.html">DANH MỤC /</a></li>
+                <li><a href="sanphamsachin.html">SÁCH IN </a></li>
+            </ul>
+        </div>
+       <!-- đăng Ký -->
+       <div class="signup-container container3">
+        <div class="signup-header">ĐĂNG KÝ</div>
+        <form class="signup-form">
+          <div class="form-group">
+            <label for="fullname">Họ và Tên:</label>
+            <input type="text" id="fullname" name="fullname" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Mật Khẩu:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <button type="submit">Đăng Ký</button>
+          </div>
+        </form>
+      </div>
+
+          <!-------------- card ------------>
+    <div class="card-zoom-main">
+        <div class="card-zoom">
+            <div class="head-card">
+                <strong id="productName">LEARNING WELL 3: SÁCH GIẤY VỚI ỨNG DỤNG NAVIO, SÁCH WELLNESS AND SÁCH ĐIỆN TỬ WELLNESS <span><i class="bi bi-x-circle-fill"></i></span></strong>
+            </div>
+            <div class="card-sp">
+                <div class="image-sp">
+                    <img src="images/sp1.jpg" id="productImage" alt="" height="200px" width="100px">
+                </div>
+                <div class="infor-sp">
+                    <p style="font-weight: bold; display: block; color: red; margin: 20px 0px 10px 0px;">Số Lượng:</p>
+                    <input style="height: 40px; width: 70px;" type="number" id="quantity" value="1" min="1">
+                    <button class="button1" id="addToCartBtn">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- footter -->
+    <a class="totop" href="#">
+        <img src="images/totop.png" height="50px" width="50px">
+    </a>
+    <footer>
+        <div class="footer-left">
+            <h4><strong>Sản xuất tại Công ty <br> ICEGROUP-STORE</strong></h4>
+            <li>IEC Group là đơn vị chuyên cung cấp các giải <br> pháp, tài liệu dạy và học ngoại ngữ tối ưu từ <br> các tổ chức giáo dục hàng đầu thế giới. Với <br> đội ngũ đầy kinh nghiệm và sự hiểu biết sâu <br> sắc về giáo dục tại Việt Nam, IEC Group hiện <br> đang làm việc trực tiếp với nhiều tổ chức và <br> trường học để tư vấn các mô hình tích hợp <br> giữa giáo trình truyền thống và ứng dụng <br> công nghệ nhằm cải tiến chất lượng giảng dạy.</li>
+        </div>
+        <div class="footer-center1">
+            <h4><strong>Liên Kết</strong></h4>
+            <li><a href=""> &#10148; Tìm kiếm</a></li>
+            <li><a href=""> &#10148; Giới thiệu</a></li>
+            <li><a href=""> &#10148; Chính sách đổi trả</a></li>
+            <li><a href=""> &#10148; Chính sách bảo mật</a></li>
+            <li><a href=""> &#10148; Chính sách thanh toán</a></li>
+            <li><a href=""> &#10148; Chính sách vận chuyển và giao nhận</a></li>
+            <li><a href=""> &#10148; Chính sách xử lý khiếu nại</a></li>
+            <li><a href=""> &#10148; Chính sách kiểm hàng</a></li>
+        </div>
+        <div class="footer-right">
+            <h4><strong>Thông tin liên hệ</strong></h4>
+            <li>Tầng 10 Tòa Nhà Soho Residence số 100 <br> Cô Giang, P. Cô Giang, Q. 1, TP. HCM</li>
+            <li>0707207990</li>
+            <li>cskh@cosmocosmetic.vn</li>
+            <div class="icon">
+                <ul>
+                    <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                    <li><a href=""><i class="bi bi-youtube"></i></a></li>
+                    <li><a href=""><i class="bi bi-twitter"></i></a></li>
+                    <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="tich">
+                <img src="images/tich.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>
+            Copyright © 2023 IEC GROUP. <br>
+            CÔNG TY CỔ PHẦN ĐẦU TƯ IEC  <br>
+            MST: 0316679645 <br>
+            Ngày cấp lần đầu: 18/01/2021 <br>
+            Nơi cấp: Phòng đăng ký kinh doanh - Sở Kế hoạch và Đầu tư thành phố Hồ Chí Minh <br>
+            Trụ sở chính: 76 Đường 65, P. Tân Phong, Quận 7, Tp. Hồ Chí Minh. <br>
+            VPĐD: 6/21 Đồ Sơn, Phường 4, Quận Tân Bình, Thành phố Hồ Chí Minh. <br>
+        </p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
